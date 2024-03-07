@@ -4,6 +4,7 @@ import Menu from './Menu';
 
 import routes from './route.config';
 import configureValidations from './Validations';
+import MoviesList from './movies/MoviesList';
 
 
 configureValidations()
@@ -19,6 +20,9 @@ function App() {
           <route.component/>
         </Route>
         )}
+
+       
+
 
       </Switch>
       
