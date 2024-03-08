@@ -19,7 +19,7 @@ export default function FilterMovies() {
                 onSubmit={(values) => console.log(values)}
             >
                 {(formikProps) => (
-                    <Form placeholder={undefined}>
+                    <Form>
                         <div className="row gx-3 allign-items-center">
                             <div className="col-auto">
                                 <input type="text" className="form-control" id="title"

@@ -16,7 +16,7 @@ export default function MovieTheaterForm(props:movieTheaterForm){
         })}
         >
             {(formikProps)=>(
-                <Form placeholder={undefined}>
+                <Form>
                     <TextField displayName="Name" field="name"/>
                     <div style={{marginBottom:'1rem'}}>
                           <Map/>
