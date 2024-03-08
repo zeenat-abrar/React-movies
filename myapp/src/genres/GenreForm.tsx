@@ -19,7 +19,7 @@ export default function GenreForm(props:genreFormProps){
             <Form placeholder={undefined}>
         <TextField field='name' displayName='Name'  />
         
-            <Button disabled={formikProps.isSubmitting} type='submit'>Save Changes</Button>
+            <Button disabled={formikProps.isSubmitting} type='submit' className="btn btn-primary">Save Changes</Button>
             <Link className="btn btn-secondary" to="/genres">Cancel</Link>
         </Form>
         )}

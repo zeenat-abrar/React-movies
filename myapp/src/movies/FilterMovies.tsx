@@ -1,5 +1,6 @@
 import { Field, Form, Formik } from "formik"
 import { genreDTO } from "../genres/genres.model";
+import Button from "../utils/Button";
 
 export default function FilterMovies() {
 
@@ -15,7 +16,7 @@ export default function FilterMovies() {
         <>
             <h3>filter movie</h3>
             <Formik initialValues={initialValues}
-                onSubmit={values => console.log(values)}
+                onSubmit={(values) => console.log(values)}
             >
                 {(formikProps) => (
                     <Form placeholder={undefined}>
@@ -49,7 +50,8 @@ export default function FilterMovies() {
                                 </div>
                             </div>
                             <div className="col-auto">
-
+                                      <Button className="btn btn-primary" onClick={()=>formikProps.submitForm()}>Filter</Button>
+                                    <Button className="btn btn-danger ms-3" onClick={()=>formikProps.setValues(initialValues)}>Clear</Button>
                             </div>
                         </div>
                     </Form>

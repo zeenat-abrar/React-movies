@@ -19,10 +19,6 @@ function App() {
           <route.component/>
         </Route>
         )}
-
-       
-
-
       </Switch>
       
     </div>
