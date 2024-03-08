@@ -4,6 +4,9 @@ import * as Yup from 'yup';
 import Button from '../utils/Button';
 import { Link } from 'react-router-dom';
 import TextField from '../forms/TextField';
+import DateField from '../forms/DateField';
+import ImageField from '../forms/ImageField';
+import CheckboxField from '../forms/CheckboxField';
 
 
 
@@ -20,6 +23,12 @@ export default function MovieForm(props: movieFormProps){
     <Form>
 
       <TextField displayName='Title' field='title'/>
+      <CheckboxField displayName='In Theaters' field="in Theaters" />
+      <TextField displayName='Trailer' field='trailer'/>
+      <DateField displayName='Release Date' field="releaseDate" />
+       <ImageField displayName='Poster' field="poster"
+       imageURL={props.model.posterURL}
+       />
 
 
         <Button disabled={formikProps.isSubmitting} type='submit' className='btn btn-primary'>Save changes</Button>
