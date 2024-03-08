@@ -34,7 +34,7 @@ export default function MovieTheaterForm(props:movieTheaterForm){
                     <TextField displayName="Name" field="name"/>
                     <div style={{marginBottom:'1rem'}}>
                           <MapField latField="latitude"  lngField="longitude"
-                          coordinate={transformCoordinates()}
+                          coordinates={transformCoordinates()}
                           />
                     </div>
                     <Button disabled={formikProps.isSubmitting} type="submit" className="btn btn-primary">Save changes</Button>
