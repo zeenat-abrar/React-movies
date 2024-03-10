@@ -17,7 +17,7 @@ const {values} =useFormikContext<any>();
   
     return(
         <Map
-        coordinates={props.coordinates}
+        coordinates={props.coordinates || []}
         handleMapClick={handleMapClick}
         />
     )
@@ -25,7 +25,7 @@ const {values} =useFormikContext<any>();
 
 
 interface mapFieldProps{
-    coordinate:coordinateDTO[];
+    coordinates?:coordinateDTO[];
     latField:string;
     lngField:string;
 }
